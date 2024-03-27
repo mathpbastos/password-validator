@@ -1,5 +1,7 @@
 package com.learning.passwordvalidator.validator.service;
 
+import com.learning.passwordvalidator.model.PasswordRequestDTO;
+import com.learning.passwordvalidator.model.PasswordResponseDTO;
 import com.learning.passwordvalidator.validator.chain.PasswordValidatorHandler;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -22,15 +24,10 @@ public class PasswordValidatorService {
         this.next = passwordValidatorHandler;
     }
 
-    public List<String> validatePassword(String password) {
-        this.regenerateErrorsList();
-        this.first.verifyPassword(password);
+    public List<String> validatePassword(String password, List<String> errors) {
+        this.first.verifyPassword(password, errors);
 
-        return this.first.getErrors();
-    }
-
-    private void regenerateErrorsList() {
-        this.first.setErrors(new ArrayList<String>());
+        return errors;
     }
 
 }
