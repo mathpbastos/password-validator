@@ -1,12 +1,8 @@
 package com.learning.passwordvalidator.validator.service;
 
-import com.learning.passwordvalidator.model.PasswordRequestDTO;
-import com.learning.passwordvalidator.model.PasswordResponseDTO;
 import com.learning.passwordvalidator.validator.chain.PasswordValidatorHandler;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Component

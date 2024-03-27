@@ -1,6 +1,5 @@
 package com.learning.passwordvalidator.validator.chain;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SpecialCharacterConstraintHandler extends PasswordValidatorHandler {

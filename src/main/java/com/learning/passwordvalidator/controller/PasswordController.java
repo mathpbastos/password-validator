@@ -1,6 +1,5 @@
 package com.learning.passwordvalidator.controller;
 
-import com.learning.passwordvalidator.model.Password;
 import com.learning.passwordvalidator.model.PasswordRequestDTO;
 import com.learning.passwordvalidator.validator.service.PasswordValidatorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +29,5 @@ public class PasswordController {
 
         return ResponseEntity.noContent().build();
     }
-
 
 }

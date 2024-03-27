@@ -1,8 +1,5 @@
 package com.learning.passwordvalidator.validator.chain;
 
-import com.learning.passwordvalidator.model.PasswordResponseDTO;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PasswordValidatorHandler {
